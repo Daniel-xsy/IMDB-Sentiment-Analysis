@@ -1,0 +1,23 @@
+data:
+  maxlen: 256
+  start_idx: 0
+  end_idx: 10000
+model:
+  name: 'cnn'
+  max_words: 10000
+  emb_size: 128
+  filter_heights: [5,29,43]
+  dropout: 0.5
+  out_size: 64
+  max_norm: 1
+optimizer: 'Adam'
+scheduler: 
+  name: 'ReduceLROnPlateau'
+  step_size: 7
+  gamma: 0.1
+  patience: 2
+lr: 1.0e-02
+weight_decay: 2.0e-04
+batchsize: 256
+epoch: 20
+num_worker: 16
