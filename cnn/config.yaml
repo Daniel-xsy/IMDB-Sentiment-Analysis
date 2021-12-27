@@ -1,0 +1,29 @@
+batchsize: 256
+best acc: 0.8866
+data:
+  end_idx: 10000
+  maxlen: 256
+  start_idx: 0
+epoch: 20
+lr: 0.01
+model:
+  dropout: 0.5
+  emb_size: 128
+  filter_heights:
+  - 5
+  - 11
+  - 17
+  - 23
+  max_norm: 1
+  max_words: 10000
+  name: cnn
+  out_size: 64
+n_epoch: 6
+num_worker: 16
+optimizer: Adam
+scheduler:
+  gamma: 0.1
+  name: ReduceLROnPlateau
+  patience: 2
+  step_size: 7
+weight_decay: 0.0002

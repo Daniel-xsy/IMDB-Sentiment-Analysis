@@ -1,0 +1,26 @@
+batchsize: 256
+best acc: 0.8902
+data:
+  end_idx: 10000
+  maxlen: 256
+  start_idx: 0
+epoch: 20
+lr: 0.002
+model:
+  bidirectional: true
+  drop_out: 0.5
+  emb_size: 128
+  hid_size: 128
+  max_norm: 1
+  max_words: 10000
+  name: LSTM
+  num_layers: 3
+n_epoch: 20
+num_worker: 8
+optimizer: Adam
+scheduler:
+  gamma: 0.1
+  name: ReduceLROnPlateau
+  patience: 2
+  step_size: 7
+weight_decay: 1.0e-06
