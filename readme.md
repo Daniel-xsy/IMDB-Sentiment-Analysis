@@ -18,25 +18,25 @@ You can change the configuration in [config](./config).
 
 we follow the origin [LSTM](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.676.4320&rep=rep1&type=pdf) as possible
 
-![lstm](.\figure\lstm.png)
+![lstm](./figure/lstm.png)
 
 #### CNN
 
 we adopt the methods mentioned in *[Effective Use of Word Order for Text Categorization with Convolutional Neural Networks](https://arxiv.org/pdf/1412.1058.pdf)*
 
-![cnn](.\figure\cnn.png)
+![cnn](./figure/cnn.png)
 
 #### Transformer
 
 We use the original Transformer Encoder as *[Attention is all you need](https://proceedings.neurips.cc/paper/2017/file/3f5ee243547dee91fbd053c1c4a845aa-Paper.pdf)* and use the concept of `CLS` Token as *[BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding](https://arxiv.org/pdf/1810.04805.pdf&usg=ALkJrhhzxlCL6yTht2BRmH9atgvKFxHsxQ)*
 
-![trans](.\figure\trans.png)
+![trans](./figure/trans.png)
 
 ### Experiment result
 
 #### Model Comparison
 
-| Model           |           |
+| Model           | Accuracy  |
 | --------------- | --------- |
 | LSTM            | 89.02     |
 | Transformer     | 87.47     |
